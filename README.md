@@ -1,16 +1,16 @@
 # as_test
 
-In HDL folder, there are the hardware design VHDL code files.
+In HDL folder, it's hardware design VHDL code files.
 
-The key contribution in PL part is dispatch module that is combined from input_arb.v, crossbar.v and selector.v.
+The key contribution in PL part is dispatch module that is combined from (1)input_arb.v, (2)crossbar.v and (3)selector.v.
 
-Also, we implemented the key module in SS, such as MMU.v.
+Also, we implemented the key module in SS, such as (1)MMU.v.
 
-The packet gen: pcapparser1gbtest.v, the packet data is read from PCAP files.
+The packet generator: (1)pcapparser1gbtest.v, the packet data is read from PCAP files.
 
-Besides, other important modules are the data bus converter c8to512.v, lookup.v.
+Besides, other important modules are the data bus converter (1)c8to512.v, (2)lookup.v.
 
-Use cases: statefull.v ndp48.v ndpqs.v measure.v
+Use cases: (1)statefull.v (2)ndp48.v (3)ndpqs.v (4)measure.v
 
 
 
