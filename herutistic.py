@@ -6,6 +6,7 @@ import copy
 # parameter define
 num_pipeline = 8
 num_id = 256
+TIME_LIMIT = 20 #limit heuristic algorithm running time to TIME_LIMIT seconds
 
 # the traffic volume of each flow set, which can be changed.
 # users can use their own data sets for doing more evaluation.
@@ -136,9 +137,13 @@ def run(num_pipeline,errbar):#############     input: 2) the balancing tolerance
 	jmin = 9999999999999
 	times = 0
 	err = 1
-
+	timerstart = time.clock()
+	timernow = time.clock()
+	running_time = timernow - timerstart
 	average = sum(realload)/num_pipeline
-	while err > errbar:
+	while err > errbar and running_time < TIME_LIMIT:
+		timernow = time.clock()
+		running_time = timernow - timerstart
 		times = times + 1
 		a,ai,b,bi = get_2_groupID(num_pipeline)
 		# print "a,ai,b,bi",a,ai,b,bi
@@ -161,7 +166,7 @@ def run(num_pipeline,errbar):#############     input: 2) the balancing tolerance
 			# print "jmin =",jmin,"de",de, "times",times,"err",err*100,"%".
 			pass
 	# print times, err*100
-	return times, err*100
+	return times, err*100, running_time
 ##########################################     heuristic: process.
 
 ##########################################     The auto testing for different set of errbar.
@@ -170,7 +175,7 @@ for j in [4,5,6,7,8]:
 	result.append([])
 	# print "j =",j
 	for i in range(1000):#1000
-		times, err = run(j,0.03)
+		times, err, running_time = run(j,0.03)
 		tmp = str(times) + "," + str(err)
 		print "tmp",tmp
 		result[j-4].append(tmp)
@@ -184,7 +189,7 @@ for j in [4,5,6,7,8]:
 	result.append([])
 	# print "j =",j
 	for i in range(1000):
-		times, err = run(j,0.05)
+		times, err, running_time = run(j,0.05)
 		tmp = str(times) + "," + str(err)
 		# print "tmp",tmp
 		result[j-4].append(tmp)
@@ -198,7 +203,7 @@ for j in [4,5,6,7,8]:
 	result.append([])
 	# print "j =",j
 	for i in range(1000):
-		times, err = run(j,0.07)
+		times, err, running_time = run(j,0.07)
 		tmp = str(times) + "," + str(err)
 		# print "tmp",tmp
 		result[j-4].append(tmp)
@@ -212,7 +217,7 @@ for j in [4,5,6,7,8]:
 	result.append([])
 	# print "j =",j
 	for i in range(1000):
-		times, err = run(j,0.09)
+		times, err, running_time = run(j,0.09)
 		tmp = str(times) + "," + str(err)
 		# print "tmp",tmp
 		result[j-4].append(tmp)
@@ -223,3 +228,20 @@ for j in range(len(result[0])):
 
 
 ##########################################     The auto testing for different set of errbar.
+
+##########################################     calculating time of 50%, 95% and 100% confidence.
+for j in range(15):                     
+                                        ##     K = 16, TIME_LIMIT = 20 seconds, errbar = 13%.
+  timer = []
+  for i in range(100):                  ##     do SA algorithm 100 times
+    
+    times, err, running_time = run(16,0.13)
+    timer.append(running_time)
+
+    # print times, err, running_time
+  timer.sort()
+
+  # print timer
+  print timer[49],timer[94],timer[99]
+
+##########################################     
