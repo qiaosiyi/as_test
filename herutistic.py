@@ -1,4 +1,5 @@
 # simulated annealing for table allocation
+import time
 import random
 import math
 import sys
