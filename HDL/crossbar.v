@@ -3,7 +3,7 @@
 
 // Coder:	joe
 // Description:
-//	4:4 交叉开关，有入队列，顺序调度
+//	4:4 crossbar, input queue, RR
 //  
 //   
 //
