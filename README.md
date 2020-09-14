@@ -1,6 +1,8 @@
 # as_test
 
-In HDL folder, it's hardware design VHDL code files.
+In HDL folder, it's hardware design VHDL code files, as figure below.
+
+![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/bpu.png)
 
 The key contribution in PL part is dispatch module that is combined from (1)input_arb.v, (2)crossbar.v and (3)selector.v.
 
