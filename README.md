@@ -14,4 +14,10 @@ Use cases: (1)statefull.v (2)ndp48.v (3)ndpqs.v (4)measure.v
 
 
 
-The Flow Entry Allocation (FEA) algorithm is implemented in heuristic.py file.
+
+The SA-based heuristic algorithm is following the processing graph below.
+
+![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/saprocess.png)
+
+The algorithm is implemented in heuristic.py file.
+
