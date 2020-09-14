@@ -1,6 +1,6 @@
 # as_test
 
-In HDL folder, it's hardware design VHDL code files, as figure below.
+In HDL folder, it's hardware design VHDL code files, as figure below shown.
 
 ![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/bpu.png)
 
