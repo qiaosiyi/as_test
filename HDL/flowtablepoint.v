@@ -3,8 +3,8 @@
 
 // Coder:	joe
 // Description:
-//	流图中的一个节点，包含paser 交叉开关 流表 action set 流表是并行方式的
-//  out_wr为有效标识，高有效。
+//		BPU
+//  out_wr HIGH enable。
 //  
 //
 //  
