@@ -3,7 +3,7 @@
 
 // Coder:	joe
 // Description:
-//	4:4 交叉�??关，有入队列，顺序调�??
+//	4:4 浜ゅ弶锟??鍏筹紝鏈夊叆闃熷垪锛岄『搴忚皟锟??
 //  
 //   
 //
@@ -175,7 +175,7 @@ module crossbar
 	
    
 	wire [NUM_QUEUES_WIDTH - 1:0]							dst_index[NUM_QUEUES-1:0];//
-	reg  [NUM_QUEUES - 1:0]							switch_hot_code; // e.g.1101 表示哪些个目的地被�?�中了，如有同dst，则通过此标志防�??2�??1//switch_hot_code
+	reg  [NUM_QUEUES - 1:0]							switch_hot_code; // e.g.1101 琛ㄧず鍝簺涓洰鐨勫湴琚拷?锟戒腑浜嗭紝濡傛湁鍚宒st锛屽垯閫氳繃姝ゆ爣蹇楅槻锟??2锟??1//switch_hot_code
 	reg [2:0]							switch_operate [NUM_QUEUES-1:0];//111for not output,001 for out from port 1,010 for out from port 2...
 	wire notempty;														//000 for 0 and 011 for 3//switch_operate
 	wire	 [NUM_QUEUES-1:0]               rd_en;
@@ -280,12 +280,12 @@ module crossbar
 	assign dst_index[7]		=	in_ctl7[1:0];
     assign dst_index[8]		=	in_ctl8[1:0];
 	assign dst_index[9]		=	in_ctl9[1:0];
-	assign dst_index[10]	=	in_ctl0[1:0];
-	assign dst_index[11]	=	in_ctl1[1:0];
-	assign dst_index[12]	=	in_ctl2[1:0];
-	assign dst_index[13]	=	in_ctl3[1:0];
-	assign dst_index[14]	=	in_ctl4[1:0];
-	assign dst_index[15]	=	in_ctl5[1:0];
+	assign dst_index[10]	=	in_ctl10[1:0];
+	assign dst_index[11]	=	in_ctl11[1:0];
+	assign dst_index[12]	=	in_ctl12[1:0];
+	assign dst_index[13]	=	in_ctl13[1:0];
+	assign dst_index[14]	=	in_ctl14[1:0];
+	assign dst_index[15]	=	in_ctl15[1:0];
 	
 	assign notempty = !empty[0] | !empty[1] | !empty[2] | !empty[3] | !empty[4] | !empty[5] | !empty[6] | !empty[7] | !empty[8] | !empty[9] | !empty[10] | !empty[11] | !empty[12] | !empty[13] | !empty[14] | !empty[15];
 	
