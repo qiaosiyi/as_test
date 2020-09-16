@@ -126,7 +126,7 @@ module eebpu10X10
 
 
 	
-	assign in_data_2c[0] = (input_sel == 15)?input_data:0;
+	assign in_data_2c[0] = (input_sel == 0)?input_data:0;
 	assign in_data_2c[1] = (input_sel == 1)?input_data:0;
 	assign in_data_2c[2] = (input_sel == 2)?input_data:0;
 	assign in_data_2c[3] = (input_sel == 3)?input_data:0;
