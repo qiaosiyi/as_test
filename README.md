@@ -26,5 +26,5 @@ The algorithm is implemented in heuristic.py file.
 
 The defination of the evaluation function, J(w’):
 
-![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
+![](http://latex.codecogs.com/gif.latex?\\D_id[j]) is the traffic volume of one of the flow groups, 
 
