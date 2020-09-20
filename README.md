@@ -40,6 +40,6 @@ is the traffic volume of one of the flow groups, ![](https://render.githubuserco
 
 The total traffic of Execution Engine(i) ![](https://render.githubusercontent.com/render/math?math={}=\\sum{D\\_id[j]},(i\in[1,K],j\in{EE_i})).
 
-The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w)=\\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}),
-The equation represents the traffic load balancing of the table allocation.
+The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w)=\\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}).
+this equation represents the traffic load balancing of the table allocation.
 
