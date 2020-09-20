@@ -26,7 +26,6 @@ The algorithm is implemented in heuristic.py file.
 
 The defination of the evaluation function, J(w’):
 
-![](http://latex.codecogs.com/gif.latex?\\D\_id[j])
-
+![](https://latex.codecogs.com/\\D\_id[j])
 is the traffic volume of one of the flow groups, 
 
