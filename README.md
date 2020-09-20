@@ -27,7 +27,7 @@ The SA-based heuristic algorithm is following the processing graph below.
 
 The algorithm is implemented in heuristic.py file.
 
-### Generate new candidate solution in the search area
+### Generate new candidate solution in the search area.
 
 A solution is a flow group allocation. To generate new neiboring solution, after the init step of the algorithm, it randomly select a flow group from any one EE(i) to another EE(j).
 
