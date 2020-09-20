@@ -31,7 +31,7 @@ is the traffic volume of one of the flow groups, ![](https://render.githubuserco
 
 The traffic of ![](https://render.githubusercontent.com/render/math?math=EE_i=) ![](https://render.githubusercontent.com/render/math?math=\sum D\\_id[j])![](https://render.githubusercontent.com/render/math?math=i\in[1,K]),![](https://render.githubusercontent.com/render/math?math=j\in EE_i).
 
-The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w) = \sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}),
+The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w) = \\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}),
 
 The equation represents the traffic load balancing of the table allocation.
 
