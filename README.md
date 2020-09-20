@@ -26,5 +26,5 @@ The algorithm is implemented in heuristic.py file.
 
 The defination of the evaluation function, J(w’):
 
-$D\_id[j]$
+$D_id[j]$
 
