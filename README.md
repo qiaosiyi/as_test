@@ -26,6 +26,6 @@ The algorithm is implemented in heuristic.py file.
 
 The defination of the evaluation function, J(w’):
 
-![](https://render.githubusercontent.com/render/math?math=D\_{id}[j])
+![](https://render.githubusercontent.com/render/math?math=D\\_{id}[j])
 is the traffic volume of one of the flow groups, ![](https://render.githubusercontent.com/render/math?math=j\in(1,256))
 
