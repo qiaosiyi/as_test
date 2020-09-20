@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # as_test
 
 In HDL folder, it's hardware design VHDL code files, as figure below shown.
