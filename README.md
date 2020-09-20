@@ -24,12 +24,12 @@ The SA-based heuristic algorithm is following the processing graph below.
 
 The algorithm is implemented in heuristic.py file.
 
-The defination of the evaluation function, J(w’):
+The defination of the evaluation function,![](https://render.githubusercontent.com/render/math?math=J(w)):
 
 ![](https://render.githubusercontent.com/render/math?math=D\\_{id}[j])
 is the traffic volume of one of the flow groups, ![](https://render.githubusercontent.com/render/math?math=j\in[1,256]).
 
-The traffic of ![](https://render.githubusercontent.com/render/math?math=EE_i=\\sum{D\\_id[j]}), (![](https://render.githubusercontent.com/render/math?math=i\in[1,K],j\in{EE_i})).
+The traffic of ![](https://render.githubusercontent.com/render/math?math=EE_i=\\sum{D\\_id[j]},(i\in[1,K],j\in{EE_i})).
 
 The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w)=\\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}})
 
