@@ -29,7 +29,7 @@ The defination of the evaluation function, J(w’):
 ![](https://render.githubusercontent.com/render/math?math=D\\_{id}[j])
 is the traffic volume of one of the flow groups, ![](https://render.githubusercontent.com/render/math?math=j\in[1,256]).
 
-The traffic of ![](https://render.githubusercontent.com/render/math?math=EE_i=D_i,i\in[1,K],D_i=\sum D\\_id[j],j\in EE_i).
+The traffic of ![](https://render.githubusercontent.com/render/math?math=EE_i=D_i).  ,i\in[1,K],D_i=\sum D\\_id[j],j\in EE_i
 
 The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w) = \sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}),
 
