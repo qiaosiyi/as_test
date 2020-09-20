@@ -1,6 +1,8 @@
 
 
-# as_test
+# Adaptable_Switch_Test
+
+## Hardware Design.
 
 In HDL folder, it's hardware design VHDL code files, as figure below shown.
 
@@ -17,12 +19,19 @@ Besides, other important modules are the data BUS converter and the output BUS: 
 
 Use cases are implemented in files: (1)statefull.v (2)ndp48.v (3)ndpqs.v (4)measure.v
 
+## Software Design.
 
 The SA-based heuristic algorithm is following the processing graph below.
 
 ![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/saprocess.png)
 
 The algorithm is implemented in heuristic.py file.
+
+### Generate new candidate solution in the search area
+
+A solution is a flow group allocation. To generate new neiboring solution, after the init step of the algorithm, it randomly select a flow group from any one EE(i) to another EE(j).
+
+### The evaluation function in SA.
 
 The defination of the evaluation function,![](https://render.githubusercontent.com/render/math?math=J(w)):
 
@@ -31,7 +40,6 @@ is the traffic volume of one of the flow groups, ![](https://render.githubuserco
 
 The total traffic of Execution Engine(i) ![](https://render.githubusercontent.com/render/math?math={}=\\sum{D\\_id[j]},(i\in[1,K],j\in{EE_i})).
 
-The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w)=\\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}})
-
+The evaluation function ![](https://render.githubusercontent.com/render/math?math=J(w)=\\sum^{K}_{i=1}(D^{2}_{i}-D^{2}_{average})^{\dfrac{1}{2}}),
 The equation represents the traffic load balancing of the table allocation.
 
