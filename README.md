@@ -2,7 +2,9 @@
 
 In HDL folder, it's hardware design VHDL code files, as figure below shown.
 
-![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/bpu.png)
+![image](https://github.com/qiaosiyi/qiaosiyi.github.io/blob/master/figs/bpu2.jpg)
+
+An opensourced packet generator can be find in the project of [PacketGenerator](https://github.com/NetFPGA/netfpga/wiki/PacketGenerator).
 
 The key contribution in PL part is dispatch module that is combined from (1)input_arb.v, (2)crossbar.v and (3)selector.v.
 
