@@ -26,5 +26,5 @@ The algorithm is implemented in heuristic.py file.
 
 The defination of the evaluation function, J(w’):
 
-$D_id[j]$
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
 
